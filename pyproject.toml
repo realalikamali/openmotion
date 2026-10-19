@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openmotion"
+version = "0.1.0"
+description = "A portable, agent-friendly workspace for code-driven motion explainers"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["manim==0.22.0", "numpy>=2.1,<3"]
+
+[project.scripts]
+openmotion = "openmotion.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openmotion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

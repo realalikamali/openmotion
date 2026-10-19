@@ -1,0 +1,11 @@
+[film]
+title = "A new perspective"
+subtitle = "Turn a complex idea into a clear visual story."
+scene = "scene.py"
+scene_class = "Film"
+
+[style]
+background = "#0B1320"
+foreground = "#F4F1E9"
+accent = "#67E8C1"
+secondary = "#9AA8FF"
